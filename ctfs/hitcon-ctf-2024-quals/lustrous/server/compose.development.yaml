@@ -1,0 +1,15 @@
+services:
+  lustrous:
+    build: ./src
+    ports:
+      - "31337:31337"
+      - "8545:8545"
+    restart: unless-stopped
+    environment:
+      - FLAG=hitcon{f1y_m3_t0_th3_m00n_3a080ea144010d74}
+      - PORT=31337
+      - HTTP_PORT=8545
+      - PUBLIC_IP=localhost
+      - FUNC_SIG_IS_SOLVED=is_solved()
+      - SHARED_SECRET=362781437160639256098765551548576627880347418397516356285320214087923674841060590303108176063851603939271796
+      - ENV=development

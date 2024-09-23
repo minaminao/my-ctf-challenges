@@ -1,0 +1,11 @@
+eth-account==0.11.2
+eth-typing==3.5.2
+eth-utils==2.3.1
+Flask==3.0.3
+Flask-Cors==4.0.1
+gunicorn==22.0.0
+pycryptodome==3.20.0
+requests==2.32.3
+rlp==3.0.0
+vyper==0.3.10
+web3==6.19.0

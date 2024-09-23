@@ -1,0 +1,9 @@
+solver/lib
+solver/cache
+solver/out
+
+.python-version
+*.tar.gz
+distfiles
+.env
+surveillance.py
