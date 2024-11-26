@@ -4,6 +4,7 @@
 
 This directory includes:
 - `build`: the challenge server based on [my previous challenge](../../hitcon-ctf-2024-quals/lustrous/).
+- `files`: the distributed files for players
 - `solver`: the author's solver
 
 Solves: 2 / 653 teams in 24h.
