@@ -1,10 +1,28 @@
 # My CTF Challenges
 
 **Table of Contents**
+- [SECCON CTF 13 Quals - OSAKA](#seccon-ctf-13-quals---osaka)
+- [SECCON CTF 13 Quals - Trillion Ether](#seccon-ctf-13-quals---trillion-ether)
 - [BlazCTF 2024 - Chisel as a Service](#blazctf-2024---chisel-as-a-service)
 - [HITCON CTF 2024 Quals - Lustrous](#hitcon-ctf-2024-quals---lustrous)
 - [SECCON CTF 2023 Quals - Tokyo Payload](#seccon-ctf-2023-quals---tokyo-payload)
 - [SECCON CTF 2023 Quals - Perfect Blu](#seccon-ctf-2023-quals---perfect-blu)
+
+## SECCON CTF 13 Quals - OSAKA
+
+[Source](ctfs/seccon-ctf-13-quals/osaka/)
+
+Categories: Blockchain  
+Solves: 2 / 653 teams in 24h  
+Tags: Solidity, EVM Object Format (EOF), Access Set
+
+## SECCON CTF 13 Quals - Trillion Ether
+
+[Source](ctfs/seccon-ctf-13-quals/trillion-ether/)
+
+Categories: Blockchain  
+Solves: 35 / 653 teams in 24h  
+Tags: Solidity, Compiler Bug, Uninitialized Storage Variable
 
 ## BlazCTF 2024 - Chisel as a Service
 

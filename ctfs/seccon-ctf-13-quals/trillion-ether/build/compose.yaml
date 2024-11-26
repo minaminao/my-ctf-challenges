@@ -1,0 +1,14 @@
+services:
+  trillion-ether:
+    build: ./src
+    ports:
+      - "31337:31337"
+      - "8545:8545"
+    restart: unless-stopped
+    environment:
+      - FLAG=SECCON{unb3l13-bubb13_64362072f002c1ea}
+      - PORT=31337
+      - HTTP_PORT=8545
+      - PUBLIC_IP=trillion-ether.seccon.games
+      - SHARED_SECRET=37066539167276956766098200939677720952863069100758808950316570929135279551683
+      - ENV=production
