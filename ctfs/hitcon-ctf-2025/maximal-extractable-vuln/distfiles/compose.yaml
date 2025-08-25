@@ -1,0 +1,17 @@
+services:
+  challenge:
+    build: ./src
+    ports:
+      - "31337:31337"
+      - "8545:8545"
+    restart: unless-stopped
+    environment:
+      - FLAG=hitcon{redacted}
+      - PORT=31337
+      - HTTP_PORT=8545
+      - PUBLIC_IP=localhost
+      - SHARED_SECRET=redactedredacted
+      - ENV=local
+      - NODE_KILL_AFTER_MINUTES=10
+      - FORKING_RPC_URL=YOUR_MAINNET_RPC_URL
+      - FORKING_BLOCK_NUMBER=23190041

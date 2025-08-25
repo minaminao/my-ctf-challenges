@@ -1,0 +1,17 @@
+services:
+  challenge:
+    build: ./src
+    ports:
+      - "31337:31337"
+      - "8545:8545"
+    restart: unless-stopped
+    environment:
+      - FLAG=hitcon{https://www.youtube.com/watch?v=yRgHFh7H6UQ}
+      - PORT=31337
+      - HTTP_PORT=8545
+      - PUBLIC_IP=mev.chal.hitconctf.com
+      - SHARED_SECRET=57972994680140859866031616602596192581388968418865869689559037363521148134046
+      - ENV=production
+      - NODE_KILL_AFTER_MINUTES=10
+      - FORKING_RPC_URL=YOUR_MAINNET_RPC_URL
+      - FORKING_BLOCK_NUMBER=23190041

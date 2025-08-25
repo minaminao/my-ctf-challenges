@@ -1,0 +1,3 @@
+.python-version
+*.tar.gz
+.env

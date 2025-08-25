@@ -1,0 +1,6 @@
+@uniswap/v4-periphery/=lib/v4-periphery/
+@uniswap/permit2/=lib/permit2/
+@uniswap/universal-router/=lib/universal-router/
+@uniswap/v3-core/=lib/v3-core/
+@uniswap/v2-core/=lib/v2-core/
+@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
