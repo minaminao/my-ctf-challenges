@@ -1,0 +1,6 @@
+services:
+  challenge:
+    build: ./challenge
+    ports:
+      - "5001:5001"
+    restart: unless-stopped

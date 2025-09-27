@@ -1,0 +1,36 @@
+services:
+  program-builder:
+    build:
+      context: .
+      dockerfile: ./program/Dockerfile
+    volumes:
+      - program-artifacts:/output
+      - ./challenge:/host-challenge
+    command: sh -c "cp /app/target/deploy/soltoss.so /output/ && cp /app/target/deploy/soltoss.so /host-challenge/"
+
+  server-builder:
+    build:
+      context: .
+      dockerfile: ./server/Dockerfile
+    volumes:
+      - server-artifacts:/output
+      - ./challenge:/host-challenge
+    command: sh -c "cp /app/server/target/release/soltoss-server /output/ && cp /app/server/target/release/soltoss-server /host-challenge/ && chmod +x /host-challenge/soltoss-server"
+    depends_on:
+      - program-builder
+
+  challenge:
+    build: ./challenge
+    ports:
+      - "5001:5001"
+    restart: unless-stopped
+    volumes:
+      - ./challenge:/app:ro
+    depends_on:
+      - program-builder
+      - server-builder
+    
+
+volumes:
+  program-artifacts:
+  server-artifacts:

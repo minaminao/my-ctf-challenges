@@ -1,0 +1,3 @@
+```
+python solve.py
+```

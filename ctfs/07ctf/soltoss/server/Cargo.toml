@@ -1,0 +1,12 @@
+[package]
+name = "soltoss-server"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+sol-ctf-framework = { git = "https://github.com/otter-sec/sol-ctf-framework", rev = "eef2daf0576378b5694568361c5a676d8ab4bfbd" }
+solana-sdk = "2.2.2"
+solana-program = "=2.2.1"
+solana-program-test = "2.2.7"
+soltoss = { version = "1.0.0", path = "../program" }
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
