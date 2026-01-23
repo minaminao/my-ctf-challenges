@@ -56,7 +56,7 @@ $ bash world.sh
 File not found
 ```
 
-フラグは `/flag-(md5hash).txt` に配置されています。
+また、与えられた Dockerfile から、イメージは `python:3.14.2` をベースに構築されており、フラグは `/flag-(md5hash).txt` に配置されていることがわかります。
 
 ## 考察
 
