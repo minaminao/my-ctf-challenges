@@ -1,4 +1,4 @@
-# Author's Writeup for Substance
+# Author's Writeup for The World
 
 Daily AlpacaHack で 2/6 に出題した『The World』の作問者 Writeup です。
 
