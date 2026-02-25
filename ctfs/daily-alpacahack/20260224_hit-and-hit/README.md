@@ -13,7 +13,7 @@ Hit! Hit! Hit! AAAAAAAAH LET'S GOOOOOOOO!!!
 ヒント: hit-and-miss (https://alpacahack.com/daily/challenges/hit-and-miss) を先に解くことをおすすめします。
 ```
 
-ヒントで言及されている『hit-and-miss』では以下の Python スクリプトがサーバーで実行されていました:
+ヒントで言及されている『[hit-and-miss](https://alpacahack.com/daily/challenges/hit-and-miss)』（author: ark）では以下の Python スクリプトがサーバーで実行されていました:
 
 ```python
 import os, re
@@ -95,7 +95,8 @@ ReDoS とも呼ばれます。
 逆に、肯定先読み部分でマッチしない場合は、そこで終了です。
 
 実際に次のように、マッチしない場合はすぐに実行が終わりますが、マッチしている場合は終わる気配がありません:
-```
+
+```python
 >>> t=time.time(); re.match("^(?=Alpaca{REDACTx)((.*)*)*!", "Alpaca{REDACTED}"); time.time()-t
 0.000102996826171875
 >>> t=time.time(); re.match("^(?=Alpaca{REDACTE)(((.*)*)*)*!", "Alpaca{REDACTED}"); time.time()-t
